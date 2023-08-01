@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    
+}
+.stats{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    width: 70vw;
+    background-color:hsl(244, 38%, 16%) ;
+    border-radius: 7px;
+    display: flex;
+}
+.card .desc h1{
+    font-size: 2rem;
+}
+.card .desc h1 span{
+    color: hsl(277, 64%, 61%);
+    font-size: 2rem;
+}
+.card .desc p{
+    color:hsla(0, 0%, 100%, 0.75) ;
+    margin-top: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 3rem;
+    margin-left: 0;
+}
+.card .desc{
+    width: 50%;
+    padding: 4rem;
+}
+.card .card-img{
+    width: 50%;
+    background: url(image.jpg);
+    background-size: cover;
+    border-radius: 0 7px 7px 0;
+}
+.card .stats{
+    display: flex;
+    justify-content: space-between;
+}
+.card .stats .number{
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+.card .stats .name{
+    text-transform: uppercase;
+    color:hsla(0, 0%, 100%, 0.6) ;
+    letter-spacing: 1.5px;
+    font-size: 10px;
+}
+
+/* Responsive */
+@media (max-width:375px){
+    .card{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .card .desc{
+        width: auto;
+        height: 70%;
+        text-align: center;
+        padding: 1.5rem;
+
+    }
+}
